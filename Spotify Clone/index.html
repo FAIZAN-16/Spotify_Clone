@@ -1,0 +1,320 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Spotify Clone
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-900 text-white">
+  <div class="flex h-screen">
+   <!-- Sidebar -->
+   <div class="w-64 bg-gray-800 p-4 flex flex-col">
+    <div class="mb-8">
+     <h1 class="text-3xl font-bold text-green-500">
+      Spotify
+     </h1>
+    </div>
+    <nav class="flex-1">
+     <ul>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-400 hover:text-white" href="#">
+        <i class="fas fa-home mr-3">
+        </i>
+        Home
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-400 hover:text-white" href="#">
+        <i class="fas fa-search mr-3">
+        </i>
+        Search
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-400 hover:text-white" href="#">
+        <i class="fas fa-book mr-3">
+        </i>
+        Your Library
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-400 hover:text-white" href="#">
+        <i class="fas fa-plus-square mr-3">
+        </i>
+        Create Playlist
+       </a>
+      </li>
+      <li class="mb-4">
+       <a class="flex items-center text-gray-400 hover:text-white" href="#">
+        <i class="fas fa-heart mr-3">
+        </i>
+        Liked Songs
+       </a>
+      </li>
+     </ul>
+    </nav>
+    <div>
+     <h2 class="text-gray-400 mb-2">
+      Playlists
+     </h2>
+     <ul>
+      <li class="mb-2">
+       <a class="text-gray-400 hover:text-white" href="#">
+        Discover Weekly
+       </a>
+      </li>
+      <li class="mb-2">
+       <a class="text-gray-400 hover:text-white" href="#">
+        Release Radar
+       </a>
+      </li>
+      <li class="mb-2">
+       <a class="text-gray-400 hover:text-white" href="#">
+        Daily Mix 1
+       </a>
+      </li>
+      <li class="mb-2">
+       <a class="text-gray-400 hover:text-white" href="#">
+        Daily Mix 2
+       </a>
+      </li>
+      <li class="mb-2">
+       <a class="text-gray-400 hover:text-white" href="#">
+        Daily Mix 3
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <!-- Main Content -->
+   <div class="flex-1 flex flex-col">
+    <!-- Header -->
+    <header class="flex items-center justify-between p-4 bg-gray-800">
+     <div class="flex items-center">
+      <button class="text-gray-400 hover:text-white mr-4">
+       <i class="fas fa-chevron-left">
+       </i>
+      </button>
+      <button class="text-gray-400 hover:text-white">
+       <i class="fas fa-chevron-right">
+       </i>
+      </button>
+     </div>
+     <div class="flex items-center">
+      <button class="bg-gray-700 text-white px-4 py-2 rounded-full mr-4">
+       Upgrade
+      </button>
+      <div class="flex items-center">
+       <img alt="Anime avatar of user" class="rounded-full w-8 h-8 mr-2" height="40" src="https://storage.googleapis.com/a1aa/image/yeykHUVfMwhRwUV4bIUofyG54EORFYmrxReBwxlPfMKS6sPeE.jpg" width="40"/>
+       <span class="text-white">
+        User Name
+       </span>
+      </div>
+     </div>
+    </header>
+    <!-- Content -->
+    <div class="flex-1 overflow-y-auto p-4">
+     <h2 class="text-2xl font-bold mb-4">
+      Good Evening
+     </h2>
+     <div class="grid grid-cols-3 gap-4 mb-8">
+      <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+       <img alt="Album cover of Discover Weekly" class="w-16 h-16 mr-4" height="60" src="https://storage.googleapis.com/a1aa/image/rjUWWqWAZX4hBVj6bUMffhejzxd77PRyH8IebQsF1wVkA2HPB.jpg" width="60"/>
+       <span>
+        Discover Weekly
+       </span>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+       <img alt="Album cover of Release Radar" class="w-16 h-16 mr-4" height="60" src="https://storage.googleapis.com/a1aa/image/vezORex5dHutP0egtdoyxaVAP9w2m5tOgyc7hAQxcmfYB2HPB.jpg" width="60"/>
+       <span>
+        Release Radar
+       </span>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+       <img alt="Album cover of Daily Mix 1" class="w-16 h-16 mr-4" height="60" src="https://storage.googleapis.com/a1aa/image/1CkewpgK2W3ubyZpvtj4WaylJgBFdesV7HVT95RVN6aQg9xTA.jpg" width="60"/>
+       <span>
+        Daily Mix 1
+       </span>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+       <img alt="Album cover of Daily Mix 2" class="w-16 h-16 mr-4" height="60" src="https://storage.googleapis.com/a1aa/image/5pcMrdCk0m6aNlTJaEW8tAX3bIeic77BtK58Nit5fBVTg9xTA.jpg" width="60"/>
+       <span>
+        Daily Mix 2
+       </span>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+       <img alt="Album cover of Daily Mix 3" class="w-16 h-16 mr-4" height="60" src="https://storage.googleapis.com/a1aa/image/9f82VUuzY80TOaaAcfnmAHPfEfBSsMDN9nFIkqy0P12UB2HPB.jpg" width="60"/>
+       <span>
+        Daily Mix 3
+       </span>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg flex items-center">
+       <img alt="Album cover of Chill Hits" class="w-16 h-16 mr-4" height="60" src="https://storage.googleapis.com/a1aa/image/oL5keXnp5TxvG6y1bbxLdqX99EqqpSF1OSAyk8hRG5fZg9xTA.jpg" width="60"/>
+       <span>
+        Chill Hits
+       </span>
+      </div>
+     </div>
+     <h2 class="text-2xl font-bold mb-4">
+      Recently Played
+     </h2>
+     <div class="grid grid-cols-5 gap-4 mb-8">
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of Recently Played 1" class="w-full mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/S4Pwclcv34ZYAZxybqmOQxzyAQjIMgt9qC2r64oexiTOwexTA.jpg" width="150"/>
+       <span>
+        Recently Played 1
+       </span>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of Recently Played 2" class="w-full mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/NkV7Gs8gxEKyABhMZK0tdV0ucTfnMPS2Rq7FdwdR1WaGwexTA.jpg" width="150"/>
+       <span>
+        Recently Played 2
+       </span>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of Recently Played 3" class="w-full mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/t78Ik572DHqSEFJH6dv8envioujpcbU0e8j5I8Q88dYfA7jnA.jpg" width="150"/>
+       <span>
+        Recently Played 3
+       </span>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of Recently Played 4" class="w-full mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/lnm4klC4ntK2LRZ3eyAZqEiexj2t9fVTU1UfLuZSlnItA2HPB.jpg" width="150"/>
+       <span>
+        Recently Played 4
+       </span>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of Recently Played 5" class="w-full mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/efMfIxyGMdWHJI5Ifq4PvdIPHAcL2uFw6nwuA7mwr5ViA2HPB.jpg" width="150"/>
+       <span>
+        Recently Played 5
+       </span>
+      </div>
+     </div>
+     <h2 class="text-2xl font-bold mb-4">
+      Popular Playlists
+     </h2>
+     <div class="grid grid-cols-5 gap-4 mb-8">
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of Popular Playlist 1" class="w-full mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/QeXFHUEq81W8RSaE8eqqWOBnRwteZ9o49wqZDaO4zN4dA7jnA.jpg" width="150"/>
+       <span>
+        Popular Playlist 1
+       </span>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of Popular Playlist 2" class="w-full mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/Fw8XA4qIUU7vBx0XtYnp6wJi6veWKoQ3L5QZ6ePeoV0uA7jnA.jpg" width="150"/>
+       <span>
+        Popular Playlist 2
+       </span>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of Popular Playlist 3" class="w-full mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/CdP9tTR02HZCHpK5br1wOvx6sqnn5xxyaFUzplfeo6YSg9xTA.jpg" width="150"/>
+       <span>
+        Popular Playlist 3
+       </span>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of Popular Playlist 4" class="w-full mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/pfpnCIbce2lMuUOcQEAfeMxxueRaKIUIqqgRT50kty2QDsPeE.jpg" width="150"/>
+       <span>
+        Popular Playlist 4
+       </span>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of Popular Playlist 5" class="w-full mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/MzL4n2LkaNq2K9TfroqJMmMWJZdvQaLaxZj8XsL6JG8OwexTA.jpg" width="150"/>
+       <span>
+        Popular Playlist 5
+       </span>
+      </div>
+     </div>
+     <h2 class="text-2xl font-bold mb-4">
+      New Releases
+     </h2>
+     <div class="grid grid-cols-5 gap-4">
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of New Release 1" class="w-full mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/YeJ7CieSmksUrEQuvBjJuh4m4aogFb5GWp6qySzs0aQql9xTA.jpg" width="150"/>
+       <span>
+        New Release 1
+       </span>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of New Release 2" class="w-full mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/NAWoepp4KtyTL6mQDeCxzluv4wyp72RLdiTDA1WCfsUbL7jnA.jpg" width="150"/>
+       <span>
+        New Release 2
+       </span>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of New Release 3" class="w-full mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/rqcSHlGVSNKgLVeXclW5zm9mwFzr07IZecX4f386GD2ZL7jnA.jpg" width="150"/>
+       <span>
+        New Release 3
+       </span>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of New Release 4" class="w-full mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/IQLfw1tfDWru0URRdGaKeloQ6lWR1NYQlvH5c0m6W2qTL7jnA.jpg" width="150"/>
+       <span>
+        New Release 4
+       </span>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+       <img alt="Album cover of New Release 5" class="w-full mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/IPrdkri0l8b4LhAAS7Yl7evrAo0flLvJJ8jQrcWcnFJrl9xTA.jpg" width="150"/>
+       <span>
+        New Release 5
+       </span>
+      </div>
+     </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-4 flex items-center justify-between">
+     <div class="flex items-center">
+      <img alt="Album cover of the currently playing song" class="w-16 h-16 mr-4" height="60" src="https://storage.googleapis.com/a1aa/image/BUO1LVB5R2rCORUHet3dparUTGNpyqkYBwAW4xj6nkYQwexTA.jpg" width="60"/>
+      <div>
+       <h3 class="text-white">
+        Song Title
+       </h3>
+       <p class="text-gray-400">
+        Artist Name
+       </p>
+      </div>
+     </div>
+     <div class="flex items-center">
+      <button class="text-gray-400 hover:text-white mx-2">
+       <i class="fas fa-random">
+       </i>
+      </button>
+      <button class="text-gray-400 hover:text-white mx-2">
+       <i class="fas fa-step-backward">
+       </i>
+      </button>
+      <button class="text-gray-400 hover:text-white mx-2">
+       <i class="fas fa-play-circle text-3xl">
+       </i>
+      </button>
+      <button class="text-gray-400 hover:text-white mx-2">
+       <i class="fas fa-step-forward">
+       </i>
+      </button>
+      <button class="text-gray-400 hover:text-white mx-2">
+       <i class="fas fa-redo">
+       </i>
+      </button>
+     </div>
+     <div class="flex items-center">
+      <i class="fas fa-volume-down text-gray-400 mr-2">
+      </i>
+      <input class="w-24" type="range"/>
+      <i class="fas fa-volume-up text-gray-400 ml-2">
+      </i>
+     </div>
+    </footer>
+   </div>
+  </div>
+ </body>
+</html>
